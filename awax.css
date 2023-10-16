@@ -1,0 +1,670 @@
+body
+{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*O cabeçalho começa com o logo e depois é configurado a lista de links*/
+
+header
+{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+}
+
+.logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-left: 100px
+}
+
+.logo .redondo
+{
+    background-color:rgb(189, 139, 105);
+    width: 80px;
+    height: 80px;
+    border-radius: 100px; 
+}
+
+
+/*A lista de links envolve os comandos abaixo*/
+.links-main
+{
+    display: flex;
+    align-items: center;
+    flex: 4;
+}
+
+.links-main ul
+{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-left: 50px;
+}
+
+.links-main li
+{
+
+}
+
+.links-main a
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    padding: 36px 8px;
+}
+
+.links-main a:hover
+{
+    border-bottom: 5px solid rgb(189, 139, 105);
+    color: rgb(194, 189, 189);
+    padding: 36px 8px;
+}
+
+#home
+{
+    border-bottom: 5px solid rgb(189, 139, 105);
+    color: rgb(194, 189, 189);
+    padding: 36px 8px;
+}
+/*As configurações do cabeçalho envolvem todos os comandos acima desde "#home" até ".links"*/
+
+
+/*Agora começam as configurações do meio da página onde está a foto no topo"*/
+
+main
+{
+    background-image: url(bg.jpg);
+    background-position: bottom;
+    background-size: cover;
+    height: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.transparente
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.788);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 110px;
+    margin-top: 160px;
+}
+
+.slogan h1
+{
+    font-size: 55px;
+    margin: 0px;
+}
+
+.slogan #design
+{
+    color: white;   
+}
+
+.slogan #communication
+{
+    color: rgb(189, 139, 105);
+}
+
+.slogan h3
+{
+    color: white;
+}
+
+.slogan a
+{
+    color: white;
+    background-color: rgb(189, 139, 105);
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.tres-opções
+{
+    height: 25px;
+    width: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ponto
+{
+    width: 12px;
+    height: 12px;
+    border: 2px solid rgb(189, 139, 105);
+    border-radius: 12px;
+}
+
+.selecionado
+{
+    background-color: rgb(189, 139, 105);
+}
+/*Termina aqui a sessão do "main" onde é apresentado o inicio do site com a imagem de fundo*/
+
+
+
+
+/*Começa aqui a parte que descreve sobre a empresa "about us*/
+
+.about-us
+{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-about
+{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-about h3
+{
+    margin-top: 40px;
+    margin-bottom:10px ;
+    font-size: 20px;
+    font-weight: 200px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.titulo-about h4
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: rgb(187, 181, 181);
+}
+
+
+.conteudo
+{
+    height: 305px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.descrição
+{
+    flex: 4;
+    margin: 0px 0px 200px 50px;
+    height: 200px;
+}
+
+.descrição a
+{
+    color: white;
+    background-color: rgb(189, 139, 105);
+    border-radius: 20px;
+    margin-left: 40px;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.descrição p
+{
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    color: rgb(85, 84, 84);
+}
+
+.photo-about
+{
+    flex: 3;
+    margin: 0px 40px 100px 0px;
+    display: flex;
+
+}
+
+.photo-about img
+{
+    box-shadow: 0px 4px 10px 1px;
+}
+/*A sessão do about us acaba por aqui*/
+
+
+/*Começa a sessão para confirgurar a parte de serviços do site*/
+
+.services
+{
+    background-color: black;
+    height: 350px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-titulo
+{
+    color: rgb(194, 189, 189);
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.services-titulo .titulo
+{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.services-titulo .subtitulo
+{
+    font-size: 12px;
+}
+
+.service-type
+{
+    height: 180px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.type
+{
+    height: 180px;
+    padding: 20px 20px;
+    border-right: 1px solid rgb(161, 159, 159);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.type h4
+{
+    margin: 20px 0px 0px 0px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.type p
+{
+    font-size: 15px;
+    color: rgb(194, 189, 189);
+}
+
+.quality
+{
+    border-left: 1px solid rgb(161, 159, 159);
+    flex: 1;
+}
+
+.star
+{
+    flex: 1;
+}
+
+.clock
+{
+    flex: 1;
+}
+
+.support
+{
+   
+}
+/*Aqui terminam as configurações sobre os serviços do site*/
+
+
+/*A partir de agora são as configurações da sessão de projetos do site*/
+
+.projetos
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*----------------------------titulo e subtitulo-----------------------------*/
+.titulo-projetos
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.titulo-projetos .titulo
+{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.titulo-projetos .subtitulo
+{
+    font-size: 15px;
+    color:rgb(194, 189, 189);
+}
+/*----------------------------titulo e subtitulo-----------------------------*/
+
+
+
+/*----------------------------lista de links-----------------------------*/
+.links-projetos
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.links-projetos ul
+{
+    background-color: rgb(224, 218, 218);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 600px;
+    margin: 0px;
+    padding: 0px 0px;
+    border: 1px solid rgb(182, 178, 178);
+    border-radius: 30px;
+
+}
+
+.links-projetos ul li
+{
+    list-style-type: none;
+    margin: 0px 0px;
+    padding: 10px 10px;
+    border-left: 1px solid rgb(182, 178, 178);
+}
+
+.links-projetos ul li a
+{
+    color: rgb(32, 32, 32);
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0px 10px;    
+}
+
+.links-projetos a:visited
+{
+    color: rgb(32, 32, 32);
+}
+
+.links-projetos li:hover
+{
+    color: rgb(32, 32, 32);
+    border-bottom: 5px solid rgb(189, 139, 105);
+    padding-bottom: 6px;
+}
+
+.links-projetos #all
+{
+    border-left: 0px solid black;
+}
+
+.links-projetos #photos
+{
+    color: rgb(32, 32, 32);
+    border-bottom: 5px solid rgb(189, 139, 105);
+    padding-bottom: 6px;
+}
+/*----------------------------lista de links-----------------------------*/
+
+
+
+/*----------------------------fotos dos nossos projetos-----------------------------*/
+
+.grade-de-fotos
+{
+    height: 720px;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.linha-1
+{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.linha-2
+{
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.linha-3
+{
+    width: 100%;
+    height: 230px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imagem-linha
+{
+    width: 330px;
+    height: 200px;
+}
+
+/*--------fotos--------*/
+.f1
+{
+    background-image: url(foto1.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.f2
+{
+    background-image: url(foto2.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.f3
+{
+    background-image: url(foto3.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.f4
+{
+    background-image: url(foto4.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.f5
+{
+    background-image: url(foto5.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.f6
+{
+    background-image: url(foto6.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+/*----------------------------fotos dos nossos projetos-----------------------------*/
+
+
+.more-projects
+{
+    color: white;
+    background-color: rgb(189, 139, 105);
+    width: 150px;
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    align-self: center;
+}
+/*----------Fim das configurações da sessão "nossos projetos"----------*/
+
+
+
+/*--------Nosso time---------*/
+.nosso-time
+{
+
+    background-image: url(bg.jpg);
+    background-position: bottom;
+    background-size: cover;
+    height: 600px;
+    margin-top: 80px;
+}
+
+.transparente-2
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.788);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.time-titulo
+{
+    background-color: darkgoldenrod;
+}
+
+.colaboradores
+{
+    background-color: darkslateblue;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+
+}
+
+.perfil
+{
+    background-color: burlywood;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jane
+{
+    flex: 1;
+}
+
+.mike
+{
+    flex: 1;
+}
+
+.anna
+{
+    flex: 1;
+}
+
+.colaborador
+{
+    background-color: black;
+    color: aliceblue;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+}
+
+.JD
+{
+    background-image: url(mulher1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.MC
+{
+    background-image: url(homem1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.AJ
+{
+    background-image: url(mulher2.png);
+    background-position: center;
+    background-size: cover;
+}
